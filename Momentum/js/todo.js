@@ -20,13 +20,13 @@ function deleteToDo(event) {
 function paintTodo(newToDoObj) {
     const li = document.createElement("li");
     li.id = newToDoObj.id;
-    const div = document.createElement("div");
-    div.innerText = newToDoObj.text;
+    const span = document.createElement("span");
+    span.innerText = newToDoObj.text;
     const button = document.createElement("button");
     button.innerText = "X";
     button.id = "deleteBtn";
     button.addEventListener("click", deleteToDo);
-    li.appendChild(div);
+    li.appendChild(span);
     li.appendChild(button);
     toDoList.appendChild(li);
 }
@@ -52,3 +52,19 @@ if(savedToDos !== null) {
 } else {
 
 }
+
+function deleteAllTodo (){
+    localStorage.remove("TODOS_KEY");
+    console.log(toDos);
+    const li = toDoList.querySelectorAll("li")
+    li.remove();
+}
+
+const deleteAll = document.createElement("input");
+deleteAll.setAttribute("type", "button")
+deleteAll.setAttribute("value", "Delete All");
+
+toDoForm.appendChild(deleteAll);
+deleteAll.addEventListener("click", deleteAllTodo);
+
+//todo-form 뒤에 appendChild로 넣자.

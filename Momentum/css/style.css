@@ -1,3 +1,136 @@
+body{
+    text-align: center;
+}
+
+body img {
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#login-form {
+
+    position: absolute;
+    bottom: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#login-form input {
+    outline: none;
+    text-align: center;
+    color: white;
+    font-size: 47px;
+    background: transparent;
+    border: none;
+    border-bottom: 4px solid white;
+    width: 500px;
+}
+
+#login-form ::placeholder {
+    color: white;
+}
+
 .hidden {
     display: none;
+}
+
+#greeting {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    font-weight: 300;
+    position: absolute;
+    bottom: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#greeting span {
+    font-weight: 400;
+}
+
+#todo-form {
+
+    position: absolute;
+    bottom: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#todo-form input {
+    outline: none;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 4px solid white;
+    width: 450px;
+}
+
+#todo-form ::placeholder {
+    color: white;
+}
+
+
+
+#todo-list {
+    margin: 0px;
+    color: white;
+    font-size: 40px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 100px;
+
+
+    height: 200px;
+    width: 900px;
+
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        
+
+}
+
+#deleteBtn {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    background: rgba(218, 135, 135, 0.817);
+    width: 60px;
+    border: none;
+    position: relative;
+    top: -7px;
+}
+
+#clock {
+
+    color: white;
+    font-size: 140px;
+
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-54%, -50%);
+}
+
+#quote {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+#weather {
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
 }

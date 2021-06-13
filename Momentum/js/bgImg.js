@@ -5,4 +5,9 @@ const randomBgImg = bgImg[Math.floor(Math.random() * bgImg.length)];
 const imgTag = document.createElement("img");
 imgTag.src = `img/${randomBgImg}`;
 
-document.body.appendChild(imgTag);
+const imgTagId = imgTag
+imgTagId.id = "backBgImg";
+
+document.body.prepend(imgTagId);
+document.body.prepend(imgTag);
+

@@ -18,8 +18,9 @@
         </form>
         <h1 id="greeting" class="hidden"></h1>
         <form id="todo-form" class="hidden">
-            <input required type="text" placeholder="What are your goals today?" onfocus="this.placeholder=''"
-                onblur="this.placeholder='What are your goals today?'" />
+            <input id="todo-input" required type="text" placeholder="What are your goals today?" onfocus="this.placeholder=''"
+                onblur="this.placeholder='What are your goals today?'" autocomplete="off" />
+            <input id="deleteBtn" type="button" value="Delete All" />
         </form>
         <ul id="todo-list" class="hidden"></ul>
     </div>

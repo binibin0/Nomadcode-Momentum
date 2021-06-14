@@ -2,7 +2,6 @@ const loginForm = document.querySelector("#login-form");
 const loginInput = loginForm.querySelector("#login-form input");
 const greeting = document.querySelector("body h1");
 
-const HIDDEN_CLASS = "hidden";
 const USERNAME_KEY = "username";
 
 function paintGreeting(username){
